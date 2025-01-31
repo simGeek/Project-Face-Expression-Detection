@@ -21,3 +21,9 @@ The user uploads a picture with one or more human beings with visible faces. The
 5. Surprise
 6. Fear
 7. Angry
+
+PROJECT IMAGES:
+
+![p3-1](https://github.com/user-attachments/assets/ea85353d-5836-42e5-9560-19dfb911db7f)
+![p3-2](https://github.com/user-attachments/assets/57376289-b4aa-4194-9228-0837eebb3fc7)
+
