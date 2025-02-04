@@ -22,6 +22,11 @@ The user uploads a picture with one or more human beings with visible faces. The
 6. Fear
 7. Angry
 
+✅A real data set from Kaggle is used. 
+✅Augmentation is performed to:
+1️⃣Handle imbalance
+2️⃣Introduce diversification
+
 PROJECT IMAGES:
 
 ![p3-1](https://github.com/user-attachments/assets/ea85353d-5836-42e5-9560-19dfb911db7f)
