@@ -1,0 +1,80 @@
+-------------------------------------------------------------------------------
+ENVIRONMENT VARIABLES 🌍🔑
+-------------------------------------------------------------------------------
+Think of environment variables as secret notes your operating system keeps to configure how programs behave. They store important information 
+like file paths, API keys, and system settings without hardcoding them into programs.
+
+🔹 Examples:
+PATH: Tells the OS where to find executables.
+HOME: Points to your user’s home directory.
+AWS_SECRET_KEY: Stores AWS credentials securely.
+
+🔹 Accessing them:
+Linux/macOS: echo $VAR_NAME
+Windows: echo %VAR_NAME%
+Python: import os; print(os.getenv("VAR_NAME"))
+Why use them? Because they make software portable, configurable, and more secure! 🚀
+
+-------------------------------------------------------------------------------
+EXECUTABLE FILES🏃💾
+-------------------------------------------------------------------------------
+Imagine an executable file as a magic scroll 📜 that, when opened, makes the computer follow its commands instantly! These files contain 
+machine-readable instructions that your system can run without needing an external interpreter.
+
+🔹 Types of Executables:
+Windows: .exe (chrome.exe, notepad.exe)
+Linux/macOS: No extension (/bin/bash, /usr/bin/python3)
+Scripts (require an interpreter): .py, .sh, .bat
+
+🔹 How to run them?
+Windows: Double-click or run via cmd (.\file.exe)
+In short, executables bring software to life! 💡🔥
+
+------------------------------------------------------------------------------
+DOES EVERY APPLICATION HAS EXECUTABLES?🤔💻
+------------------------------------------------------------------------------
+Yes... but not always in the form you expect! While most software has an executable component, some rely on scripts, interpreters,
+or virtual environments to function.
+
+🔹 Different Scenarios:
+✔️ Standalone Apps: Have direct executables (chrome.exe, firefox, bash)
+✔️ Interpreted Languages: Python (script.py) needs python to run
+✔️ Packages & Libraries: Might provide CLI commands (pip, gunicorn)
+✔️ Compiled Programs: C, Go, Rust create .exe or binary files
+
+So, while every runnable program depends on executables in some way, not all applications come as a single executable file. Sometimes,
+they need helpers like interpreters or runtime environments to work their magic! 🪄✨
+
+------------------------------------------------------------------------------
+AUGMENTAION TECHNIQUES🎨🤖
+------------------------------------------------------------------------------
+Augmentation techniques are methods used to artificially expand and diversify a dataset by applying transformations to existing data. 
+These techniques are widely used in computer vision, NLP, and audio processing to improve model generalization and prevent overfitting.
+
+📸 Image Augmentation (For Computer Vision) (FOCUS OF THIS PROJECT)
+1️⃣ Rotation – Rotating an image by a small degree.
+2️⃣ Flipping – Mirroring the image horizontally or vertically.
+3️⃣ Cropping & Scaling – Zooming in or out while keeping the subject in focus.
+4️⃣ Brightness & Contrast Adjustment – Changing lighting conditions.
+5️⃣ Adding Noise – Introducing random variations to make models more robust.
+6️⃣ CutMix & MixUp – Merging parts of multiple images to create hybrid samples.
+
+📝 Text Augmentation (For NLP)
+1️⃣ Synonym Replacement – Replacing words with synonyms.
+2️⃣ Back Translation – Translating text into another language and back.
+3️⃣ Word Order Shuffling – Randomly reordering words.
+4️⃣ Character-level Noise – Introducing typos and missing letters.
+5️⃣ Sentence Paraphrasing – Using AI to rewrite sentences.
+
+🔊 Audio Augmentation (For Speech & Sound)
+1️⃣ Pitch Shifting – Modifying the pitch of the audio.
+2️⃣ Time Stretching – Speeding up or slowing down speech.
+3️⃣ Adding Background Noise – Simulating real-world noise conditions.
+4️⃣ Volume Adjustment – Changing loudness.
+5️⃣ Spectrogram Masking – Masking parts of the spectrogram(a visual representation of the frequency content of a signal over time.
+    It shows how the frequency (pitch) of a sound or signal varies across time) to improve robustness.
+
+🔥 Why Use Augmentation?
+✅ Reduces overfitting.
+✅ Makes models more robust to real-world variations.
+✅ Allows training with less data.
