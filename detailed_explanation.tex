@@ -171,3 +171,57 @@ The seed ensures reproducibility of the shuffle. If you run this code multiple t
 
 Purpose:
 Shuffling a dataset is important for training machine learning models because it prevents the model from learning any unintended patterns or biases from the order of the data. It ensures that the model sees a diverse batch of data during training.
+
+----------------------------------------------------------------------------
+🔥 ResNet-50: A POWERFUL DEEP LEARNING MODEL
+----------------------------------------------------------------------------
+ResNet-50 (Residual Network with 50 layers) is a deep convolutional neural network (CNN) architecture widely used for image classification, object detection, and feature extraction.
+
+🏗 Architecture Breakdown
+✅ "50" means the network has 50 layers (mostly convolutional & fully connected layers).
+✅ Residual Learning: It uses skip connections (shortcuts) to bypass layers, preventing the vanishing gradient problem.
+✅ Deep & Efficient: Unlike plain deep networks, ResNet-50 learns better with fewer training issues.
+
+🔄 How Does It Work?
+🔷 Convolutional Layers: Extracts features like edges, textures, and patterns.
+🔷 Residual Blocks: Shortcut connections skip layers, helping gradient flow & making deep networks trainable.
+🔷 Global Average Pooling: Reduces feature maps to a single value per channel before classification.
+🔷 Fully Connected Layer: Final 1000-class classification (for ImageNet).
+
+Basic Residual Block Formula:
+
+y=F(x)+x
+
+Where:
+x = Input
+F(x) = Transformation (convolution, activation, etc.)
+y = Output after adding the shortcut
+
+⚡ Why is ResNet-50 Important?
+✔ Solves vanishing gradient problem in deep networks
+✔ Can train deeper networks (50+ layers) effectively
+✔ Outperforms older architectures (e.g., VGG16) with fewer parameters
+✔ Pretrained on ImageNet → Used for transfer learning in real-world projects
+
+🎯 Use Cases
+✅ Image Classification (Dogs, Cats, Cars, etc.)
+✅ Object Detection & Segmentation (YOLO, Mask R-CNN)
+✅ Feature Extraction for Custom Models
+✅ Medical Imaging (X-rays, MRIs)
+✅ Face Recognition & AI-powered Vision Tasks
+
+base_model = ResNet50(weights='imagenet', include_top=False, input_shape=input_shape)
+
+📌 What Each Argument Means?
+✅ weights='imagenet' → Uses pre-trained weights from the ImageNet dataset (a massive dataset with 1.2M images and 1000 classes).
+✅ include_top=False → Removes the fully connected (FC) classification layer (so we can add our own custom classifier).
+✅ input_shape=input_shape → Defines the input size (e.g., (224, 224, 3)). The model expects 3D input: (height, width, channels).
+
+
+📌 Explanation of from tensorflow.keras.models import Model
+This line imports the Model class from tensorflow.keras.models.
+
+🔥 What is Model in Keras?
+Model is a functional API class used to build custom deep learning architectures in Keras.
+Unlike Sequential, which stacks layers linearly, Model allows complex architectures (e.g., multiple inputs/outputs, skip connections, etc.).
+It is flexible and used for models like ResNet, U-Net, and GANs.
