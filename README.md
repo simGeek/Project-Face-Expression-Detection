@@ -4,6 +4,10 @@ Aim:
 
 To detect face expressions on a human face. 
 
+Kaggle Dataset Link:
+
+https://www.kaggle.com/datasets/jonathanoheix/face-expression-recognition-dataset
+
 Skills used:
 
 1. Python
