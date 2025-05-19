@@ -1,0 +1,36 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- Character encoding -->
+    <title>Image Upload</title>  <!-- Title of the page -->
+    <!-- Link to the external CSS file hosted on S3 -->
+    <link rel="stylesheet" href="{% static 'css/style_project3.css' %}">  <!-- Replace with your actual S3 bucket URL -->
+</head>
+<body>
+    <!-- Form for image upload -->
+    <form method="post" enctype="multipart/form-data" id="uploadForm" action="/p3_imageUpload">  <!-- Replace '/p3_imageUpload/' with your backend upload endpoint -->
+        {% csrf_token %}
+        <!-- Hidden file input -->
+        <input type="file" id="fileInput" name="image" style="display: none;">  
+        
+        <div class="container">
+            <div class="button-wrapper">
+                <button type="button" class="button-73" onclick="document.getElementById('fileInput').click();">Upload A Human Image</button>  <!-- Button to trigger file input -->
+                <button type="submit" class="button-73" id="submitButton" style="display: none;">Detect Face Expression</button>  <!-- Submit button, initially hidden -->
+            </div>
+        </div>
+
+        <div class="top-right">
+            <a href="/projects" style="height:20px;width:80px;" class="button-73">Back</a>  <!-- Link to go back to projects -->
+        </div>
+    </form>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function() {
+            document.getElementById('submitButton').style.display = 'inline-block';  // Show submit button when a file is selected
+            alert('File uploaded successfully!');  // Alert user on file selection
+        });
+    </script>
+</body>
+</html>
