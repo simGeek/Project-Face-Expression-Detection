@@ -144,6 +144,15 @@ https://drive.google.com/file/d/1yNgOGq9GQL60p2byW5Hw-xHvC-y4ApAD/view?usp=drive
 
 🔹After downloading the model, save it inside 'ds_models'
 
+🔹Create a file forms.py inside 'home' and add the following:
+
+# home/forms.py
+
+from django import forms
+
+class ImageUploadForm(forms.Form):
+    image = forms.ImageField()
+
 🔹Make sure to save all the changes by saving each modified file side by side (ctrl + s).
 
 🔹Ctrl+Shift+P -> Reload Window (to reflect all the installed modules)
