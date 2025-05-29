@@ -100,7 +100,7 @@ python manage.py startapp home
 
 🔹Create new folders inside the outer 'my_project' named 'templates' and 'static'
 
-🔹Create new folders named 'js' and 'css' inside 'static'
+🔹Create new folder named 'css' inside 'static'
 
 🔹Create new folder 'ds_models' inside outer 'my_project'
 
@@ -109,8 +109,6 @@ python manage.py startapp home
 .html files --> templates
 
 .css files --> css inside static
-
-.js files --> js inside static
 
 🔹Add the following in settings.py inside inner 'my_project' (make sure to add after the BASE_DIR variable definition):
 
