@@ -28,20 +28,42 @@ The user uploads a picture with one or more human beings with visible faces. The
 
 🔹Infrastructure: AWS
 
-**4️⃣ LIBRARIES USED:
+4️⃣ LIBRARIES OR MODULES USED:
 
-🔹scikit-learn: A machine learning library for building, training, and evaluating models.
+🔹 os
 
-🔹joblib: A library for saving/loading ML models efficiently and enabling parallel processing.
+🔹 cv2
+
+🔹 np
+
+🔹 keras
+
+🔹 mtcnn
+
+🔹 numpy
+
+🔹 shutil
+
+🔹 random
+
+🔹 django
+
+🔹 imgaug
+
+🔹 imageio
+
+🔹 tensorflow
+
+🔹 matplotlib
 
 5️⃣ WORKFLOW
 
-🔹INPUT: The user enters the values of six pollutants in micrograms.
+🔹INPUT: The user uploads an image consisting of one or more human faces.
 
-🔹SUBMIT: The user submits the values by clicking on the submit button.
+🔹PROCESSING: Firstly, the human faces are spotted (MTCNN) followed by their expression detection (ResNet50 + CNN).
 
-🔹RESULT: The AQI value and the AQI descriptor along with a visualization is displayed.
-**
+🔹RESULT: The final processed image is displayed with red bounding boxes around identified human faces along with the name of the expression they show.
+
 6️⃣ INSTALLATION (with VS Code)
 
 🔹Install:
