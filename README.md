@@ -24,7 +24,7 @@ The user uploads a picture with one or more human beings with visible faces. The
 
 🔹Frontend: HTML, JS, CSS
 
-🔹Backend: Python, Deep Learning, Django
+🔹Backend: Python, Deep Learning, Computer Vision, Django
 
 🔹Infrastructure: AWS
 
