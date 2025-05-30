@@ -110,6 +110,8 @@ python manage.py startapp home
 
 .css files --> css inside static
 
+.png files --> images inside static
+
 🔹Add the following in settings.py inside inner 'my_project' (make sure to add after the BASE_DIR variable definition):
 
 import os
