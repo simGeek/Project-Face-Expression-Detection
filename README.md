@@ -70,7 +70,11 @@ The user uploads a picture with one or more human beings with visible faces. The
 
 VS Code (https://code.visualstudio.com/download)
 
-Python (https://www.python.org/downloads/)
+Python (https://www.python.org/downloads/release/python-31012/)
+
+Click on - Gzipped source tarball
+
+Make sure to add it in the path
 
 🔹Open VS Code
 
