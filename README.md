@@ -82,7 +82,7 @@ Python (https://www.python.org/downloads/)
 
 🔹Run following commands:
 
-python -m venv venv
+py -3.10 -m venv venv   
 
 venv\Scripts\activate
 
