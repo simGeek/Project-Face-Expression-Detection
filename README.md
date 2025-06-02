@@ -177,6 +177,8 @@ class ImageUpload(models.Model):
 
 🔹Ctrl+Shift+P -> Reload Window (to reflect all the installed modules)
 
+🔹Run 'python manage.py makemigrations' in the VS Code terminal
+
 🔹Run 'python manage.py migrate' in the VS Code terminal
 
 🔹Run 'python manage.py runserver' in the VS Code terminal
