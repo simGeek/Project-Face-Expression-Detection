@@ -1,0 +1,5 @@
+Django
+open-cv python
+tensorflow
+mtcnn
+Pillow
