@@ -123,6 +123,8 @@ python manage.py startapp home
 import os
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 🔹Inside settings.py --> 'INSTALLED_APPS', include 'home'
 
