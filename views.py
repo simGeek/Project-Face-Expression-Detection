@@ -104,7 +104,7 @@ def imageUpload(request):
         form = ImageUploadForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('success')
+            return redirect('/success')
         else:
             print("Form is not valid")
             print(form.errors)
