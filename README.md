@@ -104,7 +104,7 @@ python manage.py startapp home
 
 🔹Create new folders inside the outer 'my_project' named 'templates' and 'static'
 
-🔹Create new folder named 'css' inside 'static'
+🔹Create new folders named 'css' and 'images' inside 'static'
 
 🔹Create new folder 'ds_models' inside outer 'my_project'
 
