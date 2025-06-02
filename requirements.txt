@@ -1,5 +1,5 @@
 Django
-open-cv python
+opencv-python
 tensorflow
 mtcnn
 Pillow
