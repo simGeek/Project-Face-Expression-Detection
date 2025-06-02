@@ -106,7 +106,9 @@ python manage.py startapp home
 
 🔹Create new folders named 'css' and 'images' inside 'static'
 
-🔹Create new folder 'ds_models' inside outer 'my_project'
+🔹Create new folders 'ds_models' and 'media' inside outer 'my_project'
+
+🔹Create new folders 'images' and 'processed_images' inside 'media'
 
 🔹Cut and paste the following to the respective folders:
 
