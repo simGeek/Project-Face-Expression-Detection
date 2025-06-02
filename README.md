@@ -161,11 +161,15 @@ https://drive.google.com/file/d/1yNgOGq9GQL60p2byW5Hw-xHvC-y4ApAD/view?usp=drive
 # home/forms.py
 
 from django import forms
+
 from .models import ImageUpload
 
 class ImageUploadForm(forms.ModelForm):
+
     class Meta:
+    
         model = ImageUpload
+        
         fields = ['image']
         
 🔹Write the following in models.py inside 'home':
