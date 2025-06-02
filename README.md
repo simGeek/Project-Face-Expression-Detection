@@ -177,6 +177,7 @@ class ImageUploadForm(forms.ModelForm):
 from django.db import models
 
 class ImageUpload(models.Model):
+
     image = models.ImageField(upload_to='images/')
 
 🔹Make sure to save all the changes by saving each modified file side by side (ctrl + s).
